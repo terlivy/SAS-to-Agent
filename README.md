@@ -45,8 +45,19 @@ L2 执行 Agent（Claude / Hermes）
 ### 2.3 消息格式
 
 - 使用 **@mention** 触发指定 Bot
+- **@mention 必须使用完整的 @username**，不能用缩写或显示名：
+  - ✅ 正确：`@AI_claude_2026_bot`、`@AI_Hermes_2026_bot`
+  - ❌ 错误：`@Claude`、`@Hermes`（Telegram 按 Username 匹配，非显示名）
 - 回复时引用（reply）目标消息，便于追踪上下文
 - 输出结构化（表格/列表），方便 leader 汇总
+
+### 2.4 身份确认
+
+| Agent | Telegram ID | @Username | 备注 |
+|-------|------------|-----------|------|
+| SC | 8835902474 | @AI_openclaw_202605_bot | |
+| Hermes | 8942360259 | @AI_Hermes_2026_bot | |
+| Claude | 8837307974 | @AI_claude_2026_bot | |
 
 ---
 
